@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA62343C19DDB636000CE8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343B19DDB636000CE8FD /* Foundation.framework */; };
+		EA62343E19DDB636000CE8FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343D19DDB636000CE8FD /* CoreGraphics.framework */; };
+		EA62344019DDB636000CE8FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343F19DDB636000CE8FD /* UIKit.framework */; };
+		EA62344219DDB636000CE8FD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62344119DDB636000CE8FD /* SpriteKit.framework */; };
+		EA62344819DDB636000CE8FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62344619DDB636000CE8FD /* InfoPlist.strings */; };
+		EA62344A19DDB636000CE8FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62344919DDB636000CE8FD /* main.m */; };
+		EA62344E19DDB636000CE8FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62344D19DDB636000CE8FD /* AppDelegate.m */; };
+		EA62345119DDB637000CE8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA62344F19DDB637000CE8FD /* Main.storyboard */; };
+		EA62345419DDB637000CE8FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62345319DDB637000CE8FD /* ViewController.m */; };
+		EA62345719DDB637000CE8FD /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62345619DDB637000CE8FD /* MyScene.m */; };
+		EA62345919DDB637000CE8FD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EA62345819DDB637000CE8FD /* Spaceship.png */; };
+		EA62345B19DDB637000CE8FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA62345A19DDB637000CE8FD /* Images.xcassets */; };
+		EA62346219DDB637000CE8FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62346119DDB637000CE8FD /* XCTest.framework */; };
+		EA62346319DDB637000CE8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343B19DDB636000CE8FD /* Foundation.framework */; };
+		EA62346419DDB637000CE8FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343F19DDB636000CE8FD /* UIKit.framework */; };
+		EA62346C19DDB637000CE8FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62346A19DDB637000CE8FD /* InfoPlist.strings */; };
+		EA62346E19DDB637000CE8FD /* Fireball_SoccerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62346D19DDB637000CE8FD /* Fireball_SoccerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA62346519DDB637000CE8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA62343019DDB636000CE8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA62343719DDB636000CE8FD;
+			remoteInfo = "Fireball Soccer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA62343819DDB636000CE8FD /* Fireball Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fireball Soccer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA62343B19DDB636000CE8FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA62343D19DDB636000CE8FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA62343F19DDB636000CE8FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA62344119DDB636000CE8FD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EA62344519DDB636000CE8FD /* Fireball Soccer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fireball Soccer-Info.plist"; sourceTree = "<group>"; };
+		EA62344719DDB636000CE8FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA62344919DDB636000CE8FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA62344B19DDB636000CE8FD /* Fireball Soccer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fireball Soccer-Prefix.pch"; sourceTree = "<group>"; };
+		EA62344C19DDB636000CE8FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA62344D19DDB636000CE8FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA62345019DDB637000CE8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA62345219DDB637000CE8FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA62345319DDB637000CE8FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA62345519DDB637000CE8FD /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		EA62345619DDB637000CE8FD /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		EA62345819DDB637000CE8FD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EA62345A19DDB637000CE8FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA62346019DDB637000CE8FD /* Fireball SoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fireball SoccerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA62346119DDB637000CE8FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA62346919DDB637000CE8FD /* Fireball SoccerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fireball SoccerTests-Info.plist"; sourceTree = "<group>"; };
+		EA62346B19DDB637000CE8FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA62346D19DDB637000CE8FD /* Fireball_SoccerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fireball_SoccerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA62343519DDB636000CE8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62343E19DDB636000CE8FD /* CoreGraphics.framework in Frameworks */,
+				EA62344019DDB636000CE8FD /* UIKit.framework in Frameworks */,
+				EA62344219DDB636000CE8FD /* SpriteKit.framework in Frameworks */,
+				EA62343C19DDB636000CE8FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62345D19DDB637000CE8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62346219DDB637000CE8FD /* XCTest.framework in Frameworks */,
+				EA62346419DDB637000CE8FD /* UIKit.framework in Frameworks */,
+				EA62346319DDB637000CE8FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA62342F19DDB636000CE8FD = {
+			isa = PBXGroup;
+			children = (
+				EA62344319DDB636000CE8FD /* Fireball Soccer */,
+				EA62346719DDB637000CE8FD /* Fireball SoccerTests */,
+				EA62343A19DDB636000CE8FD /* Frameworks */,
+				EA62343919DDB636000CE8FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA62343919DDB636000CE8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA62343819DDB636000CE8FD /* Fireball Soccer.app */,
+				EA62346019DDB637000CE8FD /* Fireball SoccerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA62343A19DDB636000CE8FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA62343B19DDB636000CE8FD /* Foundation.framework */,
+				EA62343D19DDB636000CE8FD /* CoreGraphics.framework */,
+				EA62343F19DDB636000CE8FD /* UIKit.framework */,
+				EA62344119DDB636000CE8FD /* SpriteKit.framework */,
+				EA62346119DDB637000CE8FD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA62344319DDB636000CE8FD /* Fireball Soccer */ = {
+			isa = PBXGroup;
+			children = (
+				EA62344C19DDB636000CE8FD /* AppDelegate.h */,
+				EA62344D19DDB636000CE8FD /* AppDelegate.m */,
+				EA62344F19DDB637000CE8FD /* Main.storyboard */,
+				EA62345219DDB637000CE8FD /* ViewController.h */,
+				EA62345319DDB637000CE8FD /* ViewController.m */,
+				EA62345519DDB637000CE8FD /* MyScene.h */,
+				EA62345619DDB637000CE8FD /* MyScene.m */,
+				EA62345819DDB637000CE8FD /* Spaceship.png */,
+				EA62345A19DDB637000CE8FD /* Images.xcassets */,
+				EA62344419DDB636000CE8FD /* Supporting Files */,
+			);
+			path = "Fireball Soccer";
+			sourceTree = "<group>";
+		};
+		EA62344419DDB636000CE8FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA62344519DDB636000CE8FD /* Fireball Soccer-Info.plist */,
+				EA62344619DDB636000CE8FD /* InfoPlist.strings */,
+				EA62344919DDB636000CE8FD /* main.m */,
+				EA62344B19DDB636000CE8FD /* Fireball Soccer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA62346719DDB637000CE8FD /* Fireball SoccerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA62346D19DDB637000CE8FD /* Fireball_SoccerTests.m */,
+				EA62346819DDB637000CE8FD /* Supporting Files */,
+			);
+			path = "Fireball SoccerTests";
+			sourceTree = "<group>";
+		};
+		EA62346819DDB637000CE8FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA62346919DDB637000CE8FD /* Fireball SoccerTests-Info.plist */,
+				EA62346A19DDB637000CE8FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA62343719DDB636000CE8FD /* Fireball Soccer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA62347119DDB637000CE8FD /* Build configuration list for PBXNativeTarget "Fireball Soccer" */;
+			buildPhases = (
+				EA62343419DDB636000CE8FD /* Sources */,
+				EA62343519DDB636000CE8FD /* Frameworks */,
+				EA62343619DDB636000CE8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fireball Soccer";
+			productName = "Fireball Soccer";
+			productReference = EA62343819DDB636000CE8FD /* Fireball Soccer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA62345F19DDB637000CE8FD /* Fireball SoccerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA62347419DDB637000CE8FD /* Build configuration list for PBXNativeTarget "Fireball SoccerTests" */;
+			buildPhases = (
+				EA62345C19DDB637000CE8FD /* Sources */,
+				EA62345D19DDB637000CE8FD /* Frameworks */,
+				EA62345E19DDB637000CE8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA62346619DDB637000CE8FD /* PBXTargetDependency */,
+			);
+			name = "Fireball SoccerTests";
+			productName = "Fireball SoccerTests";
+			productReference = EA62346019DDB637000CE8FD /* Fireball SoccerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA62343019DDB636000CE8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kenny Domingo";
+				TargetAttributes = {
+					EA62345F19DDB637000CE8FD = {
+						TestTargetID = EA62343719DDB636000CE8FD;
+					};
+				};
+			};
+			buildConfigurationList = EA62343319DDB636000CE8FD /* Build configuration list for PBXProject "Fireball Soccer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA62342F19DDB636000CE8FD;
+			productRefGroup = EA62343919DDB636000CE8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA62343719DDB636000CE8FD /* Fireball Soccer */,
+				EA62345F19DDB637000CE8FD /* Fireball SoccerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA62343619DDB636000CE8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62344819DDB636000CE8FD /* InfoPlist.strings in Resources */,
+				EA62345B19DDB637000CE8FD /* Images.xcassets in Resources */,
+				EA62345919DDB637000CE8FD /* Spaceship.png in Resources */,
+				EA62345119DDB637000CE8FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62345E19DDB637000CE8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62346C19DDB637000CE8FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA62343419DDB636000CE8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62345719DDB637000CE8FD /* MyScene.m in Sources */,
+				EA62345419DDB637000CE8FD /* ViewController.m in Sources */,
+				EA62344E19DDB636000CE8FD /* AppDelegate.m in Sources */,
+				EA62344A19DDB636000CE8FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62345C19DDB637000CE8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA62346E19DDB637000CE8FD /* Fireball_SoccerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA62346619DDB637000CE8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA62343719DDB636000CE8FD /* Fireball Soccer */;
+			targetProxy = EA62346519DDB637000CE8FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA62344619DDB636000CE8FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA62344719DDB636000CE8FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA62344F19DDB637000CE8FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA62345019DDB637000CE8FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA62346A19DDB637000CE8FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA62346B19DDB637000CE8FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA62346F19DDB637000CE8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA62347019DDB637000CE8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA62347219DDB637000CE8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fireball Soccer/Fireball Soccer-Prefix.pch";
+				INFOPLIST_FILE = "Fireball Soccer/Fireball Soccer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA62347319DDB637000CE8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fireball Soccer/Fireball Soccer-Prefix.pch";
+				INFOPLIST_FILE = "Fireball Soccer/Fireball Soccer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA62347519DDB637000CE8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fireball Soccer.app/Fireball Soccer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fireball Soccer/Fireball Soccer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fireball SoccerTests/Fireball SoccerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA62347619DDB637000CE8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fireball Soccer.app/Fireball Soccer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fireball Soccer/Fireball Soccer-Prefix.pch";
+				INFOPLIST_FILE = "Fireball SoccerTests/Fireball SoccerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA62343319DDB636000CE8FD /* Build configuration list for PBXProject "Fireball Soccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62346F19DDB637000CE8FD /* Debug */,
+				EA62347019DDB637000CE8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA62347119DDB637000CE8FD /* Build configuration list for PBXNativeTarget "Fireball Soccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62347219DDB637000CE8FD /* Debug */,
+				EA62347319DDB637000CE8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA62347419DDB637000CE8FD /* Build configuration list for PBXNativeTarget "Fireball SoccerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA62347519DDB637000CE8FD /* Debug */,
+				EA62347619DDB637000CE8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA62343019DDB636000CE8FD /* Project object */;
+}
