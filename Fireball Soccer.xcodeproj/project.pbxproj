@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA26EA5619DEFAC4005298D8 /* GoalPost.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5519DEFAC4005298D8 /* GoalPost.png */; };
+		EA26EA5819DEFE4A005298D8 /* GoalPost1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5719DEFE4A005298D8 /* GoalPost1.png */; };
+		EA26EA5C19DF0698005298D8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5B19DF0698005298D8 /* bg.png */; };
+		EA26EA5E19DF0805005298D8 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5D19DF0805005298D8 /* bg1.png */; };
+		EA26EA6019DF09F6005298D8 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5F19DF09F6005298D8 /* ball.png */; };
+		EA26EA6319DF0FCC005298D8 /* MyParticle3.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6219DF0FCC005298D8 /* MyParticle3.sks */; };
+		EA26EA6519DF1427005298D8 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6419DF1427005298D8 /* spark.png */; };
+		EA26EA6A19DF41E8005298D8 /* leftFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6619DF41E8005298D8 /* leftFoot.png */; };
+		EA26EA6B19DF41E8005298D8 /* leftPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6719DF41E8005298D8 /* leftPlayer.png */; };
+		EA26EA6C19DF41E8005298D8 /* rightFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6819DF41E8005298D8 /* rightFoot.png */; };
+		EA26EA6D19DF41E8005298D8 /* rightPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA6919DF41E8005298D8 /* rightPlayer.png */; };
+		EA26EA7019DFE6CE005298D8 /* leftPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA26EA6F19DFE6CE005298D8 /* leftPlayer.m */; };
+		EA26EA7319DFE6E6005298D8 /* rightPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA26EA7219DFE6E6005298D8 /* rightPlayer.m */; };
+		EA26EA7519DFED4C005298D8 /* +btn3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA7419DFED4C005298D8 /* +btn3.png */; };
 		EA62343C19DDB636000CE8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343B19DDB636000CE8FD /* Foundation.framework */; };
 		EA62343E19DDB636000CE8FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343D19DDB636000CE8FD /* CoreGraphics.framework */; };
 		EA62344019DDB636000CE8FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343F19DDB636000CE8FD /* UIKit.framework */; };
@@ -17,13 +31,19 @@
 		EA62345119DDB637000CE8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA62344F19DDB637000CE8FD /* Main.storyboard */; };
 		EA62345419DDB637000CE8FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62345319DDB637000CE8FD /* ViewController.m */; };
 		EA62345719DDB637000CE8FD /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62345619DDB637000CE8FD /* MyScene.m */; };
-		EA62345919DDB637000CE8FD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EA62345819DDB637000CE8FD /* Spaceship.png */; };
 		EA62345B19DDB637000CE8FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA62345A19DDB637000CE8FD /* Images.xcassets */; };
 		EA62346219DDB637000CE8FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62346119DDB637000CE8FD /* XCTest.framework */; };
 		EA62346319DDB637000CE8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343B19DDB636000CE8FD /* Foundation.framework */; };
 		EA62346419DDB637000CE8FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62343F19DDB636000CE8FD /* UIKit.framework */; };
 		EA62346C19DDB637000CE8FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA62346A19DDB637000CE8FD /* InfoPlist.strings */; };
 		EA62346E19DDB637000CE8FD /* Fireball_SoccerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62346D19DDB637000CE8FD /* Fireball_SoccerTests.m */; };
+		EA62347819DDB8D7000CE8FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA62347719DDB8D7000CE8FD /* AVFoundation.framework */; };
+		EA62347F19DDDC0D000CE8FD /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62347E19DDDC0D000CE8FD /* GameScene.m */; };
+		EA62348119DDE3E2000CE8FD /* startbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = EA62348019DDE3E2000CE8FD /* startbtn.png */; };
+		EA62348319DDE45D000CE8FD /* menu.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA62348219DDE45D000CE8FD /* menu.wav */; };
+		EA62348519DDE487000CE8FD /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA62348419DDE487000CE8FD /* select.wav */; };
+		EA89667F19E008F1004EF6FF /* player1foot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89667E19E008F1004EF6FF /* player1foot.m */; };
+		EA89668219E02EBA004EF6FF /* player2foot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89668119E02EBA004EF6FF /* player2foot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +57,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA26EA5519DEFAC4005298D8 /* GoalPost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoalPost.png; sourceTree = "<group>"; };
+		EA26EA5719DEFE4A005298D8 /* GoalPost1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoalPost1.png; sourceTree = "<group>"; };
+		EA26EA5B19DF0698005298D8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		EA26EA5D19DF0805005298D8 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		EA26EA5F19DF09F6005298D8 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		EA26EA6219DF0FCC005298D8 /* MyParticle3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle3.sks; sourceTree = "<group>"; };
+		EA26EA6419DF1427005298D8 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		EA26EA6619DF41E8005298D8 /* leftFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftFoot.png; sourceTree = "<group>"; };
+		EA26EA6719DF41E8005298D8 /* leftPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftPlayer.png; sourceTree = "<group>"; };
+		EA26EA6819DF41E8005298D8 /* rightFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightFoot.png; sourceTree = "<group>"; };
+		EA26EA6919DF41E8005298D8 /* rightPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightPlayer.png; sourceTree = "<group>"; };
+		EA26EA6E19DFE6CE005298D8 /* leftPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftPlayer.h; sourceTree = "<group>"; };
+		EA26EA6F19DFE6CE005298D8 /* leftPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftPlayer.m; sourceTree = "<group>"; };
+		EA26EA7119DFE6E6005298D8 /* rightPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightPlayer.h; sourceTree = "<group>"; };
+		EA26EA7219DFE6E6005298D8 /* rightPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightPlayer.m; sourceTree = "<group>"; };
+		EA26EA7419DFED4C005298D8 /* +btn3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "+btn3.png"; sourceTree = "<group>"; };
 		EA62343819DDB636000CE8FD /* Fireball Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fireball Soccer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA62343B19DDB636000CE8FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA62343D19DDB636000CE8FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,13 +89,22 @@
 		EA62345319DDB637000CE8FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA62345519DDB637000CE8FD /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		EA62345619DDB637000CE8FD /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		EA62345819DDB637000CE8FD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EA62345A19DDB637000CE8FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA62346019DDB637000CE8FD /* Fireball SoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fireball SoccerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA62346119DDB637000CE8FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EA62346919DDB637000CE8FD /* Fireball SoccerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fireball SoccerTests-Info.plist"; sourceTree = "<group>"; };
 		EA62346B19DDB637000CE8FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA62346D19DDB637000CE8FD /* Fireball_SoccerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fireball_SoccerTests.m; sourceTree = "<group>"; };
+		EA62347719DDB8D7000CE8FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA62347D19DDDC0D000CE8FD /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		EA62347E19DDDC0D000CE8FD /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		EA62348019DDE3E2000CE8FD /* startbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbtn.png; sourceTree = "<group>"; };
+		EA62348219DDE45D000CE8FD /* menu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menu.wav; sourceTree = "<group>"; };
+		EA62348419DDE487000CE8FD /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
+		EA89667D19E008F1004EF6FF /* player1foot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player1foot.h; sourceTree = "<group>"; };
+		EA89667E19E008F1004EF6FF /* player1foot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = player1foot.m; sourceTree = "<group>"; };
+		EA89668019E02EB9004EF6FF /* player2foot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player2foot.h; sourceTree = "<group>"; };
+		EA89668119E02EBA004EF6FF /* player2foot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = player2foot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA62347819DDB8D7000CE8FD /* AVFoundation.framework in Frameworks */,
 				EA62343E19DDB636000CE8FD /* CoreGraphics.framework in Frameworks */,
 				EA62344019DDB636000CE8FD /* UIKit.framework in Frameworks */,
 				EA62344219DDB636000CE8FD /* SpriteKit.framework in Frameworks */,
@@ -87,6 +133,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA26EA5919DEFE4F005298D8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA26EA7419DFED4C005298D8 /* +btn3.png */,
+				EA26EA6619DF41E8005298D8 /* leftFoot.png */,
+				EA26EA6719DF41E8005298D8 /* leftPlayer.png */,
+				EA26EA6819DF41E8005298D8 /* rightFoot.png */,
+				EA26EA6919DF41E8005298D8 /* rightPlayer.png */,
+				EA26EA6419DF1427005298D8 /* spark.png */,
+				EA26EA5F19DF09F6005298D8 /* ball.png */,
+				EA26EA5D19DF0805005298D8 /* bg1.png */,
+				EA26EA5B19DF0698005298D8 /* bg.png */,
+				EA26EA5719DEFE4A005298D8 /* GoalPost1.png */,
+				EA26EA5519DEFAC4005298D8 /* GoalPost.png */,
+				EA62348019DDE3E2000CE8FD /* startbtn.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		EA26EA5A19DEFE65005298D8 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				EA62348419DDE487000CE8FD /* select.wav */,
+				EA62348219DDE45D000CE8FD /* menu.wav */,
+			);
+			name = music;
+			sourceTree = "<group>";
+		};
+		EA26EA6119DF0FBF005298D8 /* fx */ = {
+			isa = PBXGroup;
+			children = (
+				EA26EA6219DF0FCC005298D8 /* MyParticle3.sks */,
+			);
+			name = fx;
+			sourceTree = "<group>";
+		};
 		EA62342F19DDB636000CE8FD = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +191,7 @@
 		EA62343A19DDB636000CE8FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA62347719DDB8D7000CE8FD /* AVFoundation.framework */,
 				EA62343B19DDB636000CE8FD /* Foundation.framework */,
 				EA62343D19DDB636000CE8FD /* CoreGraphics.framework */,
 				EA62343F19DDB636000CE8FD /* UIKit.framework */,
@@ -121,6 +204,9 @@
 		EA62344319DDB636000CE8FD /* Fireball Soccer */ = {
 			isa = PBXGroup;
 			children = (
+				EA26EA6119DF0FBF005298D8 /* fx */,
+				EA26EA5A19DEFE65005298D8 /* music */,
+				EA26EA5919DEFE4F005298D8 /* images */,
 				EA62344C19DDB636000CE8FD /* AppDelegate.h */,
 				EA62344D19DDB636000CE8FD /* AppDelegate.m */,
 				EA62344F19DDB637000CE8FD /* Main.storyboard */,
@@ -128,7 +214,16 @@
 				EA62345319DDB637000CE8FD /* ViewController.m */,
 				EA62345519DDB637000CE8FD /* MyScene.h */,
 				EA62345619DDB637000CE8FD /* MyScene.m */,
-				EA62345819DDB637000CE8FD /* Spaceship.png */,
+				EA62347D19DDDC0D000CE8FD /* GameScene.h */,
+				EA62347E19DDDC0D000CE8FD /* GameScene.m */,
+				EA26EA6E19DFE6CE005298D8 /* leftPlayer.h */,
+				EA26EA6F19DFE6CE005298D8 /* leftPlayer.m */,
+				EA89667D19E008F1004EF6FF /* player1foot.h */,
+				EA89667E19E008F1004EF6FF /* player1foot.m */,
+				EA26EA7119DFE6E6005298D8 /* rightPlayer.h */,
+				EA26EA7219DFE6E6005298D8 /* rightPlayer.m */,
+				EA89668019E02EB9004EF6FF /* player2foot.h */,
+				EA89668119E02EBA004EF6FF /* player2foot.m */,
 				EA62345A19DDB637000CE8FD /* Images.xcassets */,
 				EA62344419DDB636000CE8FD /* Supporting Files */,
 			);
@@ -240,10 +335,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA26EA7519DFED4C005298D8 /* +btn3.png in Resources */,
+				EA26EA5619DEFAC4005298D8 /* GoalPost.png in Resources */,
+				EA62348519DDE487000CE8FD /* select.wav in Resources */,
+				EA26EA6019DF09F6005298D8 /* ball.png in Resources */,
+				EA26EA5C19DF0698005298D8 /* bg.png in Resources */,
 				EA62344819DDB636000CE8FD /* InfoPlist.strings in Resources */,
+				EA26EA6519DF1427005298D8 /* spark.png in Resources */,
+				EA26EA6C19DF41E8005298D8 /* rightFoot.png in Resources */,
+				EA26EA6D19DF41E8005298D8 /* rightPlayer.png in Resources */,
+				EA26EA5E19DF0805005298D8 /* bg1.png in Resources */,
 				EA62345B19DDB637000CE8FD /* Images.xcassets in Resources */,
-				EA62345919DDB637000CE8FD /* Spaceship.png in Resources */,
+				EA26EA6A19DF41E8005298D8 /* leftFoot.png in Resources */,
+				EA26EA6319DF0FCC005298D8 /* MyParticle3.sks in Resources */,
+				EA62348319DDE45D000CE8FD /* menu.wav in Resources */,
+				EA62348119DDE3E2000CE8FD /* startbtn.png in Resources */,
 				EA62345119DDB637000CE8FD /* Main.storyboard in Resources */,
+				EA26EA5819DEFE4A005298D8 /* GoalPost1.png in Resources */,
+				EA26EA6B19DF41E8005298D8 /* leftPlayer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA62345719DDB637000CE8FD /* MyScene.m in Sources */,
+				EA26EA7019DFE6CE005298D8 /* leftPlayer.m in Sources */,
 				EA62345419DDB637000CE8FD /* ViewController.m in Sources */,
+				EA62347F19DDDC0D000CE8FD /* GameScene.m in Sources */,
 				EA62344E19DDB636000CE8FD /* AppDelegate.m in Sources */,
 				EA62344A19DDB636000CE8FD /* main.m in Sources */,
+				EA89667F19E008F1004EF6FF /* player1foot.m in Sources */,
+				EA89668219E02EBA004EF6FF /* player2foot.m in Sources */,
+				EA26EA7319DFE6E6005298D8 /* rightPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +586,7 @@
 				EA62347319DDB637000CE8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA62347419DDB637000CE8FD /* Build configuration list for PBXNativeTarget "Fireball SoccerTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +595,7 @@
 				EA62347619DDB637000CE8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
