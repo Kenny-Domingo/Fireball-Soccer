@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2239A219E199C1006900BE /* GoalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2239A119E199C1006900BE /* GoalScene.m */; };
+		EA2239A519E1B04E006900BE /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2239A419E1B04E006900BE /* Score.m */; };
 		EA26EA5619DEFAC4005298D8 /* GoalPost.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5519DEFAC4005298D8 /* GoalPost.png */; };
 		EA26EA5819DEFE4A005298D8 /* GoalPost1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5719DEFE4A005298D8 /* GoalPost1.png */; };
 		EA26EA5C19DF0698005298D8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26EA5B19DF0698005298D8 /* bg.png */; };
@@ -57,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2239A019E199C1006900BE /* GoalScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalScene.h; path = ../GoalScene.h; sourceTree = "<group>"; };
+		EA2239A119E199C1006900BE /* GoalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalScene.m; path = ../GoalScene.m; sourceTree = "<group>"; };
+		EA2239A319E1B04E006900BE /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		EA2239A419E1B04E006900BE /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		EA26EA5519DEFAC4005298D8 /* GoalPost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoalPost.png; sourceTree = "<group>"; };
 		EA26EA5719DEFE4A005298D8 /* GoalPost1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoalPost1.png; sourceTree = "<group>"; };
 		EA26EA5B19DF0698005298D8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -216,6 +222,10 @@
 				EA62345619DDB637000CE8FD /* MyScene.m */,
 				EA62347D19DDDC0D000CE8FD /* GameScene.h */,
 				EA62347E19DDDC0D000CE8FD /* GameScene.m */,
+				EA2239A319E1B04E006900BE /* Score.h */,
+				EA2239A419E1B04E006900BE /* Score.m */,
+				EA2239A019E199C1006900BE /* GoalScene.h */,
+				EA2239A119E199C1006900BE /* GoalScene.m */,
 				EA26EA6E19DFE6CE005298D8 /* leftPlayer.h */,
 				EA26EA6F19DFE6CE005298D8 /* leftPlayer.m */,
 				EA89667D19E008F1004EF6FF /* player1foot.h */,
@@ -375,11 +385,13 @@
 				EA26EA7019DFE6CE005298D8 /* leftPlayer.m in Sources */,
 				EA62345419DDB637000CE8FD /* ViewController.m in Sources */,
 				EA62347F19DDDC0D000CE8FD /* GameScene.m in Sources */,
+				EA2239A519E1B04E006900BE /* Score.m in Sources */,
 				EA62344E19DDB636000CE8FD /* AppDelegate.m in Sources */,
 				EA62344A19DDB636000CE8FD /* main.m in Sources */,
 				EA89667F19E008F1004EF6FF /* player1foot.m in Sources */,
 				EA89668219E02EBA004EF6FF /* player2foot.m in Sources */,
 				EA26EA7319DFE6E6005298D8 /* rightPlayer.m in Sources */,
+				EA2239A219E199C1006900BE /* GoalScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

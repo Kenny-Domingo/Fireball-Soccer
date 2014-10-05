@@ -198,6 +198,14 @@
         ground4.physicsBody.affectedByGravity = NO;
         [self addChild:ground4];
         
+        
+        //scoring system
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        _highscore = [defaults integerForKey:@"highScore"];
+        _highscore1 = [defaults integerForKey:@"highScore1"];
+
+
+
         _scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
         _scoreLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)_highscore];
         _scoreLabel.fontColor = [UIColor yellowColor];
@@ -274,33 +282,49 @@
     
     //Goals scored
     
-    if((ball.position.x < -178 && ball.position.y < 35) && (ball.position.x > -180 && ball.position.y < 35)){
+    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)){
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        _score+= 1;
+        _highscore++;
         
-        _scoreLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)_score];
-        _scoreLabel1.text = [NSString stringWithFormat:@"%lu", (unsigned long)_score];
+        if(_highscore > [defaults integerForKey:@"highScore"]){
+            [defaults setInteger:_highscore forKey:@"highScore"];
+            _scoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore];
+            _scoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore];
+            
+        }
         
-            [defaults setInteger:_score forKey:@"highScore"];
         
+        GoalScene *game = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+        [self.scene.view presentScene:game transition:NO];
         
     }
     
-    if((ball.position.x > 178 && ball.position.y < 35) &&
-       (ball.position.x < 180 && ball.position.y < 35)){
+    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)){
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        _score1+= 1;
+        _highscore1++;
+       
+        if(_highscore1 > [defaults integerForKey:@"highScore1"]){
+            [defaults setInteger:_highscore1 forKey:@"highScore1"];
+    
+        _highScoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore1];
+        _highScoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore1];
         
-        _highScoreLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)_score1];
-        _highScoreLabel1.text = [NSString stringWithFormat:@"%lu", (unsigned long)_score1];
+        }
         
-            [defaults setInteger:_score1 forKey:@"highScore1"];
-        
-        
+        GoalScene *game1 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+        [self.scene.view presentScene:game1 transition:NO];
         
     }
+    if (((ball.position.x < -200 && ball.position.y > 35)||(ball.position.x > 200 && ball.position.y > 35))) {
 
+        GoalScene *game2 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+        [self.scene.view presentScene:game2 transition:NO];
+        
+    }
     
     
 }
