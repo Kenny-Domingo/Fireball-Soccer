@@ -104,12 +104,14 @@
         _highScoreLabel1.zPosition = 1;
         _highScoreLabel1.name = @"highscore";
         
+        [self addChild:_highScoreLabel1];
+        
         vs = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
         vs.text = @"-";
         vs.fontColor = [UIColor yellowColor];
         vs.fontSize = 150.0f;
         vs.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        vs.position =CGPointMake(-43, 98);
+        vs.position =CGPointMake(-34, 98);
         vs.zPosition = 1;
         vs.name = @"vs";
         
@@ -120,7 +122,7 @@
         vs1.fontColor = [UIColor blueColor];
         vs1.fontSize = 150.0f;
         vs1.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        vs1.position =CGPointMake(-41, 100);
+        vs1.position =CGPointMake(-32, 100);
         vs1.zPosition = 1;
         vs1.name = @"vs1";
         

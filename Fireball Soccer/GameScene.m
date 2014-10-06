@@ -265,7 +265,7 @@
         vs.fontColor = [UIColor yellowColor];
         vs.fontSize = 50.0f;
         vs.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        vs.position =CGPointMake(-8, 198);
+        vs.position =CGPointMake(-3.5, 198);
         vs.zPosition = 1;
         vs.name = @"vs";
         
@@ -276,7 +276,7 @@
         vs1.fontColor = [UIColor blueColor];
         vs1.fontSize = 50.0f;
         vs1.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        vs1.position =CGPointMake(-7, 200);
+        vs1.position =CGPointMake(-2.5, 200);
         vs1.zPosition = 1;
         vs1.name = @"vs1";
         
