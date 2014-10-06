@@ -22,6 +22,8 @@
     NSUInteger _score1;
     NSUInteger _highscore;
     NSUInteger _highscore1;
+    NSUInteger G;
+    NSUInteger G2;
 
 }
 @end
@@ -36,7 +38,12 @@
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
-        
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"gameplay"
+                                             ofType:@"mp3"]];
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+        player.numberOfLoops = -1;
+        [player play];
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         self.anchorPoint = CGPointMake(0.5, 0.5);
@@ -281,8 +288,32 @@
 -(void)update:(CFTimeInterval)currentTime {
     
     //Goals scored
+    G = 2;
+    G2 = 4;
     
-    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)){
+    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)&& ((_highscore != G)||(_highscore != G2))){
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        _highscore++;
+        
+        if(_highscore > [defaults integerForKey:@"highScore"]){
+            [defaults setInteger:_highscore forKey:@"highScore"];
+            _scoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore];
+            _scoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore];
+            
+        }
+       
+        
+        GoalScene *game = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        [self runAction:[SKAction playSoundFileNamed:@"goal1.wav" waitForCompletion:NO]];
+        [self.scene.view presentScene:game transition:NO];
+        
+    }
+    
+    G = 2;
+    G2 = 4;
+    
+    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)&& ((_highscore == G)||(_highscore == G2))){
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         _highscore++;
@@ -296,12 +327,14 @@
         
         
         GoalScene *game = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
-        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+        [self runAction:[SKAction playSoundFileNamed:@"goal3.wav" waitForCompletion:NO]];
         [self.scene.view presentScene:game transition:NO];
         
     }
+    G = 2;
+    G2 = 4;
     
-    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)){
+    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)&& ((_highscore1 != G)||(_highscore1 != G2))){
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         _highscore1++;
        
@@ -313,11 +346,35 @@
         
         }
         
+        
         GoalScene *game1 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
-        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+        [self runAction:[SKAction playSoundFileNamed:@"goal2.wav" waitForCompletion:NO]];
         [self.scene.view presentScene:game1 transition:NO];
         
     }
+    
+    G = 2;
+    G2 = 4;
+    
+    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)&& ((_highscore1 == G)||(_highscore1 == G2))){
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        _highscore1++;
+        
+        if(_highscore1 > [defaults integerForKey:@"highScore1"]){
+            [defaults setInteger:_highscore1 forKey:@"highScore1"];
+            
+            _highScoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore1];
+            _highScoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore1];
+            
+        }
+        
+        
+        GoalScene *game1 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        [self runAction:[SKAction playSoundFileNamed:@"goal1.wav" waitForCompletion:NO]];
+        [self.scene.view presentScene:game1 transition:NO];
+        
+    }
+    
     if (((ball.position.x < -200 && ball.position.y > 35)||(ball.position.x > 200 && ball.position.y > 35))) {
 
         GoalScene *game2 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];

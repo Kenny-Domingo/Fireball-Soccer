@@ -37,6 +37,7 @@
         
     }else{
     self.physicsBody.velocity = CGVectorMake(0+(randomPosition), 700);
+        [self runAction:[SKAction playSoundFileNamed:@"Whoosh.mp3" waitForCompletion:NO]];
         
     }
     

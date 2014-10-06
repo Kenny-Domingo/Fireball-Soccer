@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //play intro
+    NSLog(@"launch banner with clip");
+    NSURL *clip = [[NSBundle mainBundle] URLForResource: @"intro" withExtension:@"wav"];
+    startupPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:clip error:NULL];
+    [startupPlayer play];
+    sleep(3.5);
     return YES;
 }
 							

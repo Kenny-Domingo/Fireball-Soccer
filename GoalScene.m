@@ -32,10 +32,25 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"gameplay"
+                                             ofType:@"mp3"]];
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+        player.numberOfLoops = -1;
+        [player play];
+
+        
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         self.anchorPoint = CGPointMake(0.5, 0.5);
         self.physicsWorld.contactDelegate =self;
         self.size = CGSizeMake(480, 550);
+        
+        SKSpriteNode *menubg = [SKSpriteNode spriteNodeWithImageNamed:@"menubg"];
+        menubg.zPosition =-1;
+        menubg.size = CGSizeMake(480, 550);
+        menubg.position = CGPointMake(0, 0);
+        
+        [self addChild:menubg];
         
         //scoring system
         
@@ -113,7 +128,7 @@
     
         SKSpriteNode *startBtn = [SKSpriteNode spriteNodeWithImageNamed:@"startbtn"];
         startBtn.position = CGPointMake(-10, -100);
-        startBtn.size = CGSizeMake(140, 40);
+        startBtn.size = CGSizeMake(148, 50);
         startBtn.name = @"startBtn";
         [self addChild:startBtn];
         

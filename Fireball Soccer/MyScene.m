@@ -26,6 +26,13 @@
         self.anchorPoint = CGPointMake(0.5, 0.5);
         self.size = CGSizeMake(333, 250);
         
+        SKSpriteNode *menubg = [SKSpriteNode spriteNodeWithImageNamed:@"menubg"];
+        menubg.zPosition =-1;
+        menubg.size = CGSizeMake(333, 250);
+        menubg.position = CGPointMake(0, 0);
+        
+        [self addChild:menubg];
+        
         SKSpriteNode *startBtn = [SKSpriteNode spriteNodeWithImageNamed:@"startbtn"];
         startBtn.position = CGPointMake(0, 0);
         startBtn.size = CGSizeMake(153, 40);
@@ -56,6 +63,7 @@
         GameScene *game = [[GameScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
         [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
         [self.scene.view presentScene:game transition:transition];
+        
         
     }
     

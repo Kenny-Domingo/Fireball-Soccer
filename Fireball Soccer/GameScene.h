@@ -9,7 +9,10 @@
 #import <SpriteKit/SpriteKit.h>
 #import "GoalScene.h"
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene{
+    AVAudioPlayer *player;
+}
+
 @property int number;
 
 @end
