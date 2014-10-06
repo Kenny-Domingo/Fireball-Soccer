@@ -64,7 +64,7 @@
         ball.size = CGSizeMake(30,30);
         ball.name = @"ball";
         ball.zPosition = 1;
-        ball.position = CGPointMake(-100,100);
+        ball.position = CGPointMake(-10,100);
         ball.physicsBody.allowsRotation = YES;
         ball.physicsBody.affectedByGravity = YES;
         ball.physicsBody.restitution = 0.8;
