@@ -27,7 +27,7 @@
     player2.physicsBody.restitution = 0.2;
     player2.physicsBody.affectedByGravity = YES;
     
-    int randomPosition = arc4random()%50;
+    int randomPosition = arc4random()%10;
     
     SKAction *move = [SKAction moveByX:(randomPosition) y:50 duration:0.1];
     [player2 runAction:move];
