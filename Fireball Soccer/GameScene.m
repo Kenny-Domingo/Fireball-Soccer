@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "OOB.h"
 #import "leftPlayer.h"
 #import "player1foot.h"
 #import "rightPlayer.h"
@@ -18,6 +19,8 @@
     SKLabelNode *_scoreLabel1;
     SKLabelNode *_highScoreLabel;
     SKLabelNode *_highScoreLabel1;
+    SKLabelNode *vs;
+    SKLabelNode *vs1;
     NSUInteger _score;
     NSUInteger _score1;
     NSUInteger _highscore;
@@ -256,6 +259,28 @@
         _highScoreLabel1.name = @"highscore";
         
         [self addChild:_highScoreLabel1];
+        
+        vs = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
+        vs.text = @"-";
+        vs.fontColor = [UIColor yellowColor];
+        vs.fontSize = 50.0f;
+        vs.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+        vs.position =CGPointMake(-8, 198);
+        vs.zPosition = 1;
+        vs.name = @"vs";
+        
+        [self addChild:vs];
+        
+        vs1 = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
+        vs1.text = @"-";
+        vs1.fontColor = [UIColor blueColor];
+        vs1.fontSize = 50.0f;
+        vs1.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+        vs1.position =CGPointMake(-7, 200);
+        vs1.zPosition = 1;
+        vs1.name = @"vs1";
+        
+        [self addChild:vs1];
     }
     return self;
     
@@ -291,15 +316,15 @@
     G = 2;
     G2 = 4;
     
-    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)&& ((_highscore != G)||(_highscore != G2))){
+    if((ball.position.x > 178 && ball.position.y < 35)&&((_highscore != G)||(_highscore != G2))){
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         _highscore++;
         
         if(_highscore > [defaults integerForKey:@"highScore"]){
             [defaults setInteger:_highscore forKey:@"highScore"];
-            _scoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore];
-            _scoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore];
+            _scoreLabel.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore];
+            _scoreLabel1.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore];
             
         }
        
@@ -313,15 +338,14 @@
     G = 2;
     G2 = 4;
     
-    if((ball.position.x > 178 && ball.position.y < 35)&&(ball.position.x < 185 && ball.position.y < 35)&& ((_highscore == G)||(_highscore == G2))){
+    if((ball.position.x > 178 && ball.position.y < 35)&&((_highscore == G)||(_highscore == G2))){
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        _highscore++;
         
         if(_highscore > [defaults integerForKey:@"highScore"]){
             [defaults setInteger:_highscore forKey:@"highScore"];
-            _scoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore];
-            _scoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore];
+            _scoreLabel.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore];
+            _scoreLabel1.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore];
             
         }
         
@@ -334,15 +358,15 @@
     G = 2;
     G2 = 4;
     
-    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)&& ((_highscore1 != G)||(_highscore1 != G2))){
+    if((ball.position.x < -178 && ball.position.y < 35)&&((_highscore1 != G)||(_highscore1 != G2))){
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         _highscore1++;
        
         if(_highscore1 > [defaults integerForKey:@"highScore1"]){
             [defaults setInteger:_highscore1 forKey:@"highScore1"];
     
-        _highScoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore1];
-        _highScoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore1];
+        _highScoreLabel.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore1];
+        _highScoreLabel1.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore1];
         
         }
         
@@ -356,15 +380,14 @@
     G = 2;
     G2 = 4;
     
-    if((ball.position.x < -178 && ball.position.y < 35)&&(ball.position.x > -185 && ball.position.y < 35)&& ((_highscore1 == G)||(_highscore1 == G2))){
+    if((ball.position.x < -178 && ball.position.y < 35)&&((_highscore1 == G)||(_highscore1 == G2))){
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        _highscore1++;
         
         if(_highscore1 > [defaults integerForKey:@"highScore1"]){
             [defaults setInteger:_highscore1 forKey:@"highScore1"];
             
-            _highScoreLabel.text = [NSString stringWithFormat:@"%ul", _highscore1];
-            _highScoreLabel1.text = [NSString stringWithFormat:@"%ul", _highscore1];
+            _highScoreLabel.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore1];
+            _highScoreLabel1.text = [NSString stringWithFormat:@"%lul", (unsigned long)_highscore1];
             
         }
         
@@ -377,7 +400,7 @@
     
     if (((ball.position.x < -200 && ball.position.y > 35)||(ball.position.x > 200 && ball.position.y > 35))) {
 
-        GoalScene *game2 = [[GoalScene alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
+        OOB *game2 = [[OOB alloc] initWithSize:CGSizeMake(self.size.width, self.size.height)];
         [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
         [self.scene.view presentScene:game2 transition:NO];
         

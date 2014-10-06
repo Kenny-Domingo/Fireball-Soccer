@@ -1,14 +1,14 @@
 //
-//  GoalScene.m
+//  OOB.m
 //  Fireball Soccer
 //
-//  Created by Kenny Domingo on 05/10/2014.
+//  Created by Kenny Domingo on 06/10/2014.
 //  Copyright (c) 2014 Kenny Domingo. All rights reserved.
 //
 
-#import "GoalScene.h"
+#import "OOB.h"
 
-@interface GoalScene () <SKPhysicsContactDelegate>{
+@interface OOB () <SKPhysicsContactDelegate>{
     SKLabelNode *_scoreLabel;
     SKLabelNode *_scoreLabel1;
     SKLabelNode *_highScoreLabel;
@@ -28,11 +28,12 @@
     
 }
 @end
-@implementation GoalScene
+@implementation OOB
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
+        [self runAction:[SKAction playSoundFileNamed:@"Yahoo!.mp3" waitForCompletion:NO]];
         
         NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                              pathForResource:@"gameplay"
@@ -40,7 +41,7 @@
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
         player.numberOfLoops = -1;
         [player play];
-
+        
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         self.anchorPoint = CGPointMake(0.5, 0.5);
@@ -103,8 +104,6 @@
         _highScoreLabel1.zPosition = 1;
         _highScoreLabel1.name = @"highscore";
         
-        [self addChild:_highScoreLabel1];
-        
         vs = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
         vs.text = @"-";
         vs.fontColor = [UIColor yellowColor];
@@ -128,28 +127,28 @@
         [self addChild:vs1];
         
         winner1 = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
-        winner1.text = @"";
+        winner1.text = @"OUT OF BOUNDS";
         winner1.fontColor = [UIColor yellowColor];
         winner1.fontSize = 50.0f;
         winner1.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        winner1.position =CGPointMake(-118, -23);
+        winner1.position =CGPointMake(-208, -23);
         winner1.zPosition = 1;
         winner1.name = @"winner1";
         
         [self addChild:winner1];
         
         winner = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
-        winner.text = @"";
+        winner.text = @"OUT OF BOUNDS";
         winner.fontColor = [UIColor purpleColor];
         winner.fontSize = 50.0f;
         winner.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-        winner.position =CGPointMake(-120, -25);
+        winner.position =CGPointMake(-210, -25);
         winner.zPosition = 1;
         winner.name = @"winner";
         
         [self addChild:winner];
-
-    
+        
+        
         SKSpriteNode *startBtn = [SKSpriteNode spriteNodeWithImageNamed:@"startbtn"];
         startBtn.position = CGPointMake(-10, -100);
         startBtn.size = CGSizeMake(148, 50);
@@ -161,32 +160,7 @@
         SKAction *pulse = [SKAction sequence:@[disappear, appear]];
         [startBtn runAction:[SKAction repeatActionForever:pulse]];
         
-        reset = 0;
-        W = 4;
-        L = 4;
-        if (_highscore > W) {
-            winner.text =@"YOU WIN";
-            winner1.text =@"YOU WIN";
-            [defaults setInteger:reset forKey:@"highScore"];
-            [defaults setInteger:reset forKey:@"highScore1"];
-            
-        }else if (_highscore1 > L){
-            winner.text =@"YOU LOSE";
-            winner1.text =@"YOU LOSE";
-            [defaults setInteger:reset forKey:@"highScore"];
-            [defaults setInteger:reset forKey:@"highScore1"];
-        }
-        
-        /*
-        if ((_highscore > [defaults integerForKey:@"highScore"])||(_highscore1 > [defaults integerForKey:@"highScore1"])) {
-            winner.text = @"GOOOOOOOAL";
-        }
-        if ([winner.text  isEqual: @""]) {
-            winner.text =@"OUT OF BOUNDS";
-            winner1.text =@"OUT OF BOUNDS";
-        }
-         */
-    }
+           }
     return self;
 }
 

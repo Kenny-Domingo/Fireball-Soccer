@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA2239A219E199C1006900BE /* GoalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2239A119E199C1006900BE /* GoalScene.m */; };
-		EA2239A519E1B04E006900BE /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2239A419E1B04E006900BE /* Score.m */; };
 		EA2239A819E23325006900BE /* Default@x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2239A619E23325006900BE /* Default@x2.png */; };
 		EA2239A919E23325006900BE /* Default@x4.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2239A719E23325006900BE /* Default@x4.png */; };
 		EA2239AB19E2342A006900BE /* Default@x1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2239AA19E2342A006900BE /* Default@x1.png */; };
@@ -57,6 +56,7 @@
 		EA89667F19E008F1004EF6FF /* player1foot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89667E19E008F1004EF6FF /* player1foot.m */; };
 		EA89668219E02EBA004EF6FF /* player2foot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89668119E02EBA004EF6FF /* player2foot.m */; };
 		EA96FB9E19E2581200D829BD /* Yahoo!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA96FB9D19E2581200D829BD /* Yahoo!.mp3 */; };
+		EAA263A619E27EC200901E34 /* OOB.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA263A519E27EC200901E34 /* OOB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,6 @@
 /* Begin PBXFileReference section */
 		EA2239A019E199C1006900BE /* GoalScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalScene.h; path = ../GoalScene.h; sourceTree = "<group>"; };
 		EA2239A119E199C1006900BE /* GoalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalScene.m; path = ../GoalScene.m; sourceTree = "<group>"; };
-		EA2239A319E1B04E006900BE /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
-		EA2239A419E1B04E006900BE /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		EA2239A619E23325006900BE /* Default@x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@x2.png"; sourceTree = "<group>"; };
 		EA2239A719E23325006900BE /* Default@x4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@x4.png"; sourceTree = "<group>"; };
 		EA2239AA19E2342A006900BE /* Default@x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@x1.png"; sourceTree = "<group>"; };
@@ -133,6 +131,8 @@
 		EA89668019E02EB9004EF6FF /* player2foot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player2foot.h; sourceTree = "<group>"; };
 		EA89668119E02EBA004EF6FF /* player2foot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = player2foot.m; sourceTree = "<group>"; };
 		EA96FB9D19E2581200D829BD /* Yahoo!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yahoo!.mp3"; sourceTree = "<group>"; };
+		EAA263A419E27EC200901E34 /* OOB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOB.h; sourceTree = "<group>"; };
+		EAA263A519E27EC200901E34 /* OOB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,10 +255,10 @@
 				EA62345619DDB637000CE8FD /* MyScene.m */,
 				EA62347D19DDDC0D000CE8FD /* GameScene.h */,
 				EA62347E19DDDC0D000CE8FD /* GameScene.m */,
-				EA2239A319E1B04E006900BE /* Score.h */,
-				EA2239A419E1B04E006900BE /* Score.m */,
 				EA2239A019E199C1006900BE /* GoalScene.h */,
 				EA2239A119E199C1006900BE /* GoalScene.m */,
+				EAA263A419E27EC200901E34 /* OOB.h */,
+				EAA263A519E27EC200901E34 /* OOB.m */,
 				EA26EA6E19DFE6CE005298D8 /* leftPlayer.h */,
 				EA26EA6F19DFE6CE005298D8 /* leftPlayer.m */,
 				EA89667D19E008F1004EF6FF /* player1foot.h */,
@@ -425,11 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA263A619E27EC200901E34 /* OOB.m in Sources */,
 				EA62345719DDB637000CE8FD /* MyScene.m in Sources */,
 				EA26EA7019DFE6CE005298D8 /* leftPlayer.m in Sources */,
 				EA62345419DDB637000CE8FD /* ViewController.m in Sources */,
 				EA62347F19DDDC0D000CE8FD /* GameScene.m in Sources */,
-				EA2239A519E1B04E006900BE /* Score.m in Sources */,
 				EA62344E19DDB636000CE8FD /* AppDelegate.m in Sources */,
 				EA62344A19DDB636000CE8FD /* main.m in Sources */,
 				EA89667F19E008F1004EF6FF /* player1foot.m in Sources */,
