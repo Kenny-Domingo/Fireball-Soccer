@@ -1,6 +1,6 @@
 Fireball-Soccer
 ===============
- Simple football game with basic physics (spritekit).
+ Simple football game with basic physics (Xcode spritekit).
 
 Single player football physics based game.
 
